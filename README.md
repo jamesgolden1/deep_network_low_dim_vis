@@ -10,7 +10,7 @@ In order to correctly classify these data points in a 2D space as red or blue, a
 
 Learning feature vectors in W is equivalent to warping the input space within the representation space, and learning feature vector V is the placement of the separating plane (cyan points). Convolutional networks do something this in high dimensions to classify images, and measurements of the local curvature of the input space reveal how individual neurons and layers contribute to successful recognition.
 
-The network is described by these equations for the two layers: y = sig(W*x), z = sig(V*y), where sig is a sigmoid nonlinearity.
+The network is described by these equations for the two layers: y = sig(W*x), z = sig(V*y), where sig is a sigmoid nonlinearity. The data is limited to the (0,1) cube by the sigmoid function.
 
 When the classes are randomized, a deeper network with two hidden layers of 16 units (projected back into a penultimate layer of 3 units) is almost powerful enough to "memorize" a dataset by extreme warping of the input data space. Note that at the end a number of points are still classified incorrectly.
 
