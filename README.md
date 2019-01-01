@@ -4,7 +4,7 @@
 
 y = sig(W*x), z = sig(V*y) undergoing supervised training to separate blue and red, adapted from Olshausen, 2010. Inspired by Fig 6 of [Olshausen & Field 2005](http://www.rctn.org/bruno/CTBP/olshausen-field05.pdf) (see bottom for appendix) and [Olah 2014](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/). 
 
-![](two_layer_warping_2342403.gif)
+![](two_layer_warping_2378259.gif)
 
 In order to correctly classify these data points in a 2D space as red or blue, a supervised two-layer network needs three feature vectors in the first layer (W; green, magenta and yellow) (Olah, 2014). If the projections onto those three feature vectors are plotted in a representation space where the features are orthogonal, we can observe how the network learns to warp the 2D input space lattice in 3D representation space in order to make classification possible with a single plane (blue cyan points), where projection onto a vector normal to the cyan plane separates the two classes (rightmost panel).
 
