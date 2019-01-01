@@ -12,9 +12,9 @@ Learning feature vectors in W is equivalent to warping the input space within th
 
 The network is described by these equations for the two layers: y = sig(W*x), z = sig(V*y), where sig is a sigmoid nonlinearity.
 
-When the classes are randomized, a deep network (with five layers of 64 units, projected back into a penultimate layer of 3 units) is powerful enough to "memorize" a dataset by extreme warping of the input data space.
+When the classes are randomized, a deeper network with two hidden layers of 16 units (projected back into a penultimate layer of 3 units) is almost powerful enough to "memorize" a dataset by extreme warping of the input data space. Note that at the end a number of points are still classified incorrectly.
 
-![](three_layer_warping_1511080.gif)
+![](three_layer_warping_4574262.gif)
 
 For data in a 3D input space, the process is similar:
 
