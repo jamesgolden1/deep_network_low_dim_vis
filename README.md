@@ -4,9 +4,9 @@
 
 y = sig(W*x), z = sig(V*y) undergoing supervised training to separate blue and red, adapted from Olshausen, 2010. Inspired by Fig 6 of [Olshausen & Field 2005](http://www.rctn.org/bruno/CTBP/olshausen-field05.pdf) (see bottom for appendix) and [Olah 2014](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/). 
 
-![](images/two_layer_warping_507229.gif)
+![](images/n_layer_warping_507229.gif)
 
-These data points are linearly separable and can be classified simply by placing the decision boundary at the correct place. However, using a two-layer network (which is unncessary) shows how the space at the decision boundary is expanded, and the spaces near the center of decision volumes are contracted.
+These data points are linearly separable and can be classified simply by placing the decision boundary at the correct place. However, using a two-layer network (which is unncessary) shows how the space at the decision boundary is expanded.
 
 ![](images/two_layer_warping_2378259.gif)
 
