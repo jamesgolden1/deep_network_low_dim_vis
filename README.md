@@ -4,7 +4,11 @@
 
 y = sig(W*x), z = sig(V*y) undergoing supervised training to separate blue and red, adapted from Olshausen, 2010. Inspired by Fig 6 of [Olshausen & Field 2005](http://www.rctn.org/bruno/CTBP/olshausen-field05.pdf) (see bottom for appendix) and [Olah 2014](http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/). 
 
-![](two_layer_warping_2378259.gif)
+![](images/two_layer_warping_507229.gif)
+
+These data points are linearly separable and can be classified simply by placing the decision boundary at the correct place. However, using a two-layer network (which is unncessary) shows how the space at the decision boundary is expanded, and the spaces near the center of decision volumes are contracted.
+
+![](images/two_layer_warping_2378259.gif)
 
 In order to correctly classify these data points in a 2D space as red or blue, a supervised two-layer network needs three feature vectors in the first layer (W; green, magenta and yellow) (Olah, 2014). If the projections onto those three feature vectors are plotted in a representation space where the features are orthogonal, we can observe how the network learns to warp the 2D input space lattice in 3D representation space in order to make classification possible with a single plane (blue cyan points), where projection onto a vector normal to the cyan plane separates the two classes (rightmost panel).
 
@@ -14,11 +18,11 @@ The network is described by these equations for the two layers: y = sig(W*x), z 
 
 When the classes are randomized, a deeper network with two hidden layers of 16 units (projected back into a penultimate layer of 3 units) is almost powerful enough to "memorize" a dataset by extreme warping of the input data space. Note that at the end a number of points are still classified incorrectly.
 
-![](three_layer_warping_4574262.gif)
+![](images/three_layer_warping_4574262.gif)
 
 For data in a 3D input space, the process is similar:
 
-![](three_layer_warping_212485.gif)
+![](images/three_layer_warping_212485.gif)
 
 
 Olshausen & Fieldl, 2005, Figure 6: Overcomplete representation in a sparse coding network. (A) The iso-response contours of three
@@ -31,7 +35,7 @@ contours removes redundancy among these neurons. Now only two neurons
 will code for a stimulus anywhere in this space. (C) A full tiling of the 2D stimulus
 space now requires eight neurons, which would be overcomplete as a linear
 code, but critically sampled given this form of nonlinear response.
-![](olshausen-fig6.png)
+![](images/olshausen-fig6.png)
 
 
 
