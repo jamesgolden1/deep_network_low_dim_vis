@@ -6,7 +6,7 @@ y = sig(W*x), z = sig(V*y) undergoing supervised training to separate blue and r
 
 ![](images/n_layer_warping_507229.gif)
 
-These data points are linearly separable and can be classified simply by placing the decision boundary at the correct place. However, using a two-layer network (which is unncessary) shows how the space at the decision boundary is expanded.
+These data points are linearly separable and can be classified simply by placing the decision boundary at the correct place. However, using a two-layer network (which is unnecessary) shows how the space at the decision boundary is expanded.
 
 ![](images/two_layer_warping_2378259.gif)
 
@@ -25,7 +25,7 @@ For data in a 3D input space, the process is similar:
 ![](images/three_layer_warping_212485.gif)
 
 
-Olshausen & Fieldl, 2005, Figure 6: Overcomplete representation in a sparse coding network. (A) The iso-response contours of three
+[Olshausen & Field, 2005, Figure 6](http://www.rctn.org/bruno/CTBP/olshausen-field05.pdf): Overcomplete representation in a sparse coding network. (A) The iso-response contours of three
 linear neurons (with half-wave rectification) having linearly dependent weight
 vectors. A stimulus falling anywhere along a given contour will result in the
 same response from the neuron. A stimulus falling in the upper half-plane will
